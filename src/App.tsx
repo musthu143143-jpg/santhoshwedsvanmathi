@@ -8,6 +8,7 @@ import { BrideGroom } from "@/components/BrideGroom";
 import { Details } from "@/components/Details";
 import { Gallery } from "@/components/Gallery";
 import { Rsvp } from "@/components/Rsvp";
+import { MachanInvite } from "@/components/MachanInvite";
 import { Faq } from "@/components/Faq";
 import { Footer } from "@/components/Footer";
 
@@ -23,6 +24,7 @@ export default function App() {
         <BrideGroom />
         <Details />
         <Gallery />
+        <MachanInvite />
         <Rsvp />
         <Faq />
       </main>
