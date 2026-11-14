@@ -227,12 +227,5 @@ export const wedding = {
 
 export type DatePart = (typeof wedding.dateParts)[number];
 
-  /** The invite message from the family's "machan". */
-  machan: {
-    eyebrow: "A word from the family",
-    heading: "An invitation from our machan",
-    message:
-      "With love and pride, I invite you all to join us as my sister and Santhosh begin their life together. Your blessings will mean the world to them.",
-    name: "Karthik",
-    relation: "Vanmathi's brother",
+ 
   },
