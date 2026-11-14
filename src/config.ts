@@ -9,6 +9,7 @@ import groomPhoto from "@/assets/groom.jpg";
 import storyOne from "@/assets/story-1.jpg";
 import storyTwo from "@/assets/story-2.jpg";
 import storyThree from "@/assets/story-3.jpg";
+import rsvpPhoto from "@/assets/rsvp-photo.jpg";
 
 /** Pexels image URL helper (optionally cropped to w × h). */
 const px = (id: number, w: number, h?: number) =>
@@ -220,7 +221,7 @@ export const wedding = {
 
   images: {
     countdown: templeInterior,
-    rsvp: px(29357484, 900, 1200),
+        rsvp: rsvpPhoto,
   },
 } as const;
 
