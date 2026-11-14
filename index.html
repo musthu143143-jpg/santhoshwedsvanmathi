@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#140304" />
+    <meta name="description" content="Santhosh & Vanmathi invite you to celebrate their temple wedding at Kulandhai Vellappar Temple, Oddanchatram on 29 November 2026." />
+    <title>Santhosh &amp; Vanmathi · Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Marcellus&family=Tiro+Tamil:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #boot {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 22px;
+        background: radial-gradient(ellipse at 50% 55%, #5a1a10 0%, #240608 55%, #140304 100%);
+        color: #f8dc8d;
+        text-align: center;
+      }
+      #boot .flame {
+        width: 14px;
+        height: 22px;
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        background: radial-gradient(circle at 50% 70%, #fff4c9, #ffb640 55%, #d9591a);
+        box-shadow: 0 0 28px 10px rgba(255, 170, 60, 0.45);
+        animation: boot-flicker 1.4s ease-in-out infinite alternate;
+      }
+      #boot p {
+        margin: 0;
+        font: 500 11px/1.4 system-ui, sans-serif;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        opacity: 0.85;
+      }
+      @keyframes boot-flicker {
+        from {
+          transform: scale(1) rotate(-2deg);
+          opacity: 0.85;
+        }
+        to {
+          transform: scale(1.12) rotate(2deg);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="boot" role="status">
+        <span class="flame"></span>
+        <p>Opening the temple doors…</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
