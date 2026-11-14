@@ -18,7 +18,7 @@ export const wedding = {
   partnerTwo: "Vanmathi",
   /** Names in Tamil script, shown under the English names at the entrance. */
   partnerOneTamil: "சந்தோஷ்",
-  partnerTwoTamil: "வன்மதி",
+  partnerTwoTamil: "வான்மதி",
   hashtag: "#SanthoshWedsVanmathi",
   contactEmail: "hello@santhoshvanmathi.com",
 
@@ -106,7 +106,7 @@ export const wedding = {
   bride: {
     tag: "The Bride",
     name: "R. Vanmathi",
-    tamil: "வன்மதி",
+    tamil: "வான்மதி",
     relation: "Daughter of",
     parents: "R. Family, Oddanchatram",
     blessedBy: "Both families, relatives & friends",
