@@ -116,7 +116,7 @@ export const wedding = {
     quote: "Waiting to celebrate with you!",
     likes: ["Family", "Traditions", "Celebrations", "Blessings"],
     image: bridePhoto,
-    alt: "Vanmathi in a red and gold Kanjeevaram saree with temple jewellery",
+    alt: "Vanmathi in a maroon blouse and green Kanjeevaram saree, jasmine in her hair",
   },
   groom: {
     tag: "The Groom",
@@ -131,7 +131,7 @@ export const wedding = {
     quote: "Your presence will mean a lot to us.",
     likes: ["Family", "Traditions", "Celebrations", "Blessings"],
     image: groomPhoto,
-    alt: "Santhosh in a cream silk wedding outfit with a gold angavastram",
+    alt: "Santhosh in a maroon silk shirt and beige trousers",
   },
 
   travel: [

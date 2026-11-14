@@ -31,7 +31,7 @@ export function Details() {
       <SectionHeading
         eyebrow="The celebration"
         title="Wedding day details"
-        subtitle="Everything you need for a day of blessings, music and celebration in Madurai."
+        subtitle="Everything you need for a day of blessings, music and celebration in Oddanchatram."
       />
 
       {/* Date chip — unlocks once the seals are scratched */}

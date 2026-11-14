@@ -6,7 +6,7 @@
  */
 import doorsWide from "./temple-doors-wide.jpg";
 import doorsTall from "./temple-doors-tall.jpg";
-import coupleGreenscreen from "./couple-greenscreen.jpg";
+import coupleGreenscreen from "./couple-greenscreen.jpeg";
 import parentsPhoto from "./parents-welcome.jpg";
 import templeInterior from "../../public/images/temple-interior.jpg";
 

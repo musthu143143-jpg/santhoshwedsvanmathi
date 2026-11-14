@@ -18,14 +18,14 @@
  */
 
 export const REMOTE_GALLERY_LINKS: string[] = [
-  // "https://drive.google.com/file/d/1OcNS38eYbYNiaPmcywW2Dz586dlTLO8m/view?usp=sharing"
-  // "https://drive.google.com/file/d/1XtYgtDPhBjtoMJur0vlKlfE3TZM_av1V/view?usp=sharing",
-  // "https://drive.google.com/file/d/1XsFDmF_5rnJt5n2dCiSOl5o5HIRBhLxQ/view?usp=sharing",
-  // "https://drive.google.com/file/d/1FilkWTj9oLMhpMStUjEHMw5rcA9j-giQ/view?usp=sharing",
-  // "https://drive.google.com/file/d/1fmTW-6RB8J3-ONU56h3nWM6Zyu9OoJLH/view?usp=sharing",
-  // "https://drive.google.com/file/d/1gcmfc6qtDm-9VvKZ5Ew55Wz4sMHCcF06/view?usp=sharing",
-  // "https://drive.google.com/file/d/1gfBI7JXJHl4IpunsWebWuGeRL5PRWakD/view?usp=sharing",
-  // "https://drive.google.com/file/d/1-9fARMl6jjeK5TYMVK8QG0Pyxf8GE1lx/view?usp=sharing",
-  // "https://drive.google.com/file/d/13TARo6acb8xxYO2HVmKrOsqEoONnofR-/view?usp=sharing",
-  // "https://drive.google.com/file/d/1jadebdamaCmKZ-gB5Oy4rwkyAaRddV0b/view?usp=sharing",
+  "https://drive.google.com/file/d/1OcNS38eYbYNiaPmcywW2Dz586dlTLO8m/view?usp=sharing",
+  "https://drive.google.com/file/d/1XtYgtDPhBjtoMJur0vlKlfE3TZM_av1V/view?usp=sharing",
+  "https://drive.google.com/file/d/1XsFDmF_5rnJt5n2dCiSOl5o5HIRBhLxQ/view?usp=sharing",
+  "https://drive.google.com/file/d/1FilkWTj9oLMhpMStUjEHMw5rcA9j-giQ/view?usp=sharing",
+  "https://drive.google.com/file/d/1fmTW-6RB8J3-ONU56h3nWM6Zyu9OoJLH/view?usp=sharing",
+  "https://drive.google.com/file/d/1gcmfc6qtDm-9VvKZ5Ew55Wz4sMHCcF06/view?usp=sharing",
+  "https://drive.google.com/file/d/1gfBI7JXJHl4IpunsWebWuGeRL5PRWakD/view?usp=sharing",
+  "https://drive.google.com/file/d/1-9fARMl6jjeK5TYMVK8QG0Pyxf8GE1lx/view?usp=sharing",
+  "https://drive.google.com/file/d/13TARo6acb8xxYO2HVmKrOsqEoONnofR-/view?usp=sharing",
+  "https://drive.google.com/file/d/1jadebdamaCmKZ-gB5Oy4rwkyAaRddV0b/view?usp=sharing",
 ];

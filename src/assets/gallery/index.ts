@@ -10,16 +10,18 @@ export type GalleryPhoto = { src: string; full: string; alt: string; ratio: stri
 
 /** Captions and tile shapes for photos, in order. */
 const META: Array<{ alt: string; ratio: string }> = [
-  { alt: "Santhosh & Vanmathi", ratio: "2 / 3" },
-  { alt: "Under the floral arch", ratio: "3 / 2" },
-  { alt: "Blessings from our family", ratio: "3 / 2" },
+  { alt: "Santhosh & Vanmathi in their wedding garlands", ratio: "2 / 3" },
+  { alt: "Vanmathi in a green Kanjeevaram saree with jasmine", ratio: "2 / 3" },
+  { alt: "Santhosh in a maroon silk shirt", ratio: "2 / 3" },
+  { alt: "Our parents welcoming you with folded hands", ratio: "2 / 3" },
+  { alt: "The temple doors at dusk, lit by brass lamps", ratio: "3 / 2" },
   { alt: "Together, always", ratio: "3 / 2" },
-  { alt: "The two of us", ratio: "3 / 2" },
+  { alt: "The two of us", ratio: "2 / 3" },
   { alt: "A quiet moment", ratio: "2 / 3" },
-  { alt: "The groom", ratio: "9 / 16" },
   { alt: "Soulmates", ratio: "3 / 2" },
-  { alt: "A portrait of us", ratio: "16 / 9" },
+  { alt: "A portrait of us", ratio: "3 / 2" },
   { alt: "A night to remember", ratio: "2 / 3" },
+  { alt: "Blessings from our family", ratio: "3 / 2" },
 ];
 const EXTRA_META = (n: number) => ({
   alt: `A moment from our celebration (${n})`,
