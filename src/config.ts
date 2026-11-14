@@ -228,4 +228,3 @@ export const wedding = {
 export type DatePart = (typeof wedding.dateParts)[number];
 
  
-  },
