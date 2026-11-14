@@ -153,6 +153,13 @@ export function Gallery() {
         <p className="text-center font-sans text-[10px] font-medium tracking-[0.3em] text-sage-600 uppercase">
           Add your photos
         </p>
+        <p className="mx-auto mt-2 max-w-md text-center font-sans text-xs leading-relaxed text-ink/55">
+          Photos added here appear immediately, but they are saved in this browser only — other guests
+          won&apos;t see them. To show photos to everyone, save them in{" "}
+          <span className="font-medium text-ink/70">src/assets/gallery/</span> as{" "}
+          <span className="font-medium text-ink/70">gallery-6.jpg</span>,{" "}
+          <span className="font-medium text-ink/70">gallery-7.jpg</span> and so on.
+        </p>
 
         <div className="mt-4 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <input
