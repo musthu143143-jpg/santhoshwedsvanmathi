@@ -14,8 +14,17 @@ export function useInView<T extends Element>() {
       setInView(true);
       return;
     }
+    // The observer reports once it is attached, even for off-screen elements.
+    // If that never happens (some embedded/iframe browsers), reveal the content
+    // anyway so nothing is ever left stuck at opacity 0.
+    let reported = false;
+    const fallback = window.setTimeout(() => {
+      if (!reported) setInView(true);
+    }, 1500);
+
     const io = new IntersectionObserver(
       (entries) => {
+        reported = true;
         if (entries.some((entry) => entry.isIntersecting)) {
           setInView(true);
           io.disconnect();
@@ -24,7 +33,10 @@ export function useInView<T extends Element>() {
       { rootMargin: "0px 0px -8% 0px", threshold: 0.08 },
     );
     io.observe(el);
-    return () => io.disconnect();
+    return () => {
+      window.clearTimeout(fallback);
+      io.disconnect();
+    };
   }, []);
 
   return { ref, inView };
