@@ -6,6 +6,10 @@ import { galleryPhotos } from "@/assets/gallery";
 import { parentsPhoto, templeInterior } from "@/assets/scene";
 import bridePhoto from "@/assets/bride.jpg";
 import groomPhoto from "@/assets/groom.jpg";
+import storyOne from "@/assets/story-1.jpg";
+import storyTwo from "@/assets/story-2.jpg";
+import storyThree from "@/assets/story-3.jpg";
+import rsvpPhoto from "@/assets/rsvp-photo.jpg";
 
 /** Pexels image URL helper (optionally cropped to w × h). */
 const px = (id: number, w: number, h?: number) =>
@@ -18,7 +22,7 @@ export const wedding = {
   partnerTwo: "Vanmathi",
   /** Names in Tamil script, shown under the English names at the entrance. */
   partnerOneTamil: "சந்தோஷ்",
-  partnerTwoTamil: "வன்மதி",
+  partnerTwoTamil: "வான்மதி",
   hashtag: "#SanthoshWedsVanmathi",
   contactEmail: "hello@santhoshvanmathi.com",
 
@@ -83,21 +87,21 @@ export const wedding = {
       year: "2018",
       title: "A filter coffee introduction",
       text: "A mutual friend's housewarming in Chennai, one very strong filter coffee and a long conversation about Carnatic music. Neither of us made it to the dessert table.",
-      image: px(29153198, 800, 1000),
+      image: storyOne,
       alt: "An Indian wedding couple in traditional dress",
     },
     {
       year: "2022",
       title: "A life in colour",
       text: "Weekend train journeys, overflowing family lunches and a tiny home filled with plants. Wherever we were, it was the small rituals that became our favourites.",
-      image: px(29357484, 800, 1000),
+      image: storyTwo,
       alt: "An Indian couple embracing at their wedding",
     },
     {
       year: "2026",
       title: "One beautiful yes",
       text: "With the blessings of both families, Santhosh and Vanmathi said yes to forever. Now we wait to celebrate with you in Oddanchatram!",
-      image: px(12718440, 800, 1000),
+      image: storyThree,
       alt: "Hands joined in a traditional Indian wedding ceremony",
     },
   ],
@@ -106,7 +110,7 @@ export const wedding = {
   bride: {
     tag: "The Bride",
     name: "R. Vanmathi",
-    tamil: "வன்மதி",
+    tamil: "வான்மதி",
     relation: "Daughter of",
     parents: "R. Family, Oddanchatram",
     blessedBy: "Both families, relatives & friends",
@@ -217,8 +221,10 @@ export const wedding = {
 
   images: {
     countdown: templeInterior,
-    rsvp: px(29357484, 900, 1200),
+        rsvp: rsvpPhoto,
   },
 } as const;
 
 export type DatePart = (typeof wedding.dateParts)[number];
+
+ 
