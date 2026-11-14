@@ -70,10 +70,11 @@ export function Gallery() {
   const [linkInput, setLinkInput] = useState("");
   const [linkError, setLinkError] = useState("");
   const [index, setIndex] = useState<number | null>(null);
+  const [failed, setFailed] = useState<Record<string, true>>({});
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Uploaded / pasted photos come first, then the configured gallery.
-  const photos: Photo[] = [...uploads, ...galleryPhotos];
+  const photos: Photo[] = [...uploads, ...galleryPhotos].filter((p) => !failed[p.src]);
 
   useEffect(() => {
     saveUploads(uploads);
@@ -139,6 +140,7 @@ export function Gallery() {
   };
 
   const clearUploads = () => setUploads([]);
+  const failedCount = Object.keys(failed).length;
 
   return (
     <section id="gallery" className="relative px-4 py-24 sm:px-6 sm:py-32">
@@ -230,6 +232,14 @@ export function Gallery() {
           </div>
         )}
 
+        {failedCount > 0 && (
+          <p className="mt-3 text-center font-sans text-xs leading-relaxed text-[#b0533f]">
+            {failedCount} photo{failedCount === 1 ? "" : "s"} could not be loaded. If it is a Google
+            Drive link, open the file in Drive, choose Share and set General access to{" "}
+            <span className="font-medium">Anyone with the link</span>.
+          </p>
+        )}
+
         {galleryIsEmpty && uploads.length === 0 && (
           <p className="mt-3 text-center font-sans text-xs leading-relaxed text-ink/55">
             Tip: upload your photos above, or paste public links. They appear instantly below.
@@ -251,6 +261,7 @@ export function Gallery() {
                   src={photo.src}
                   alt={photo.alt}
                   loading="lazy"
+                  onError={() => setFailed((f) => ({ ...f, [photo.src]: true }))}
                   className="block w-full object-cover transition duration-700 ease-out group-hover:scale-[1.04]"
                   style={{ aspectRatio: photo.ratio }}
                 />
